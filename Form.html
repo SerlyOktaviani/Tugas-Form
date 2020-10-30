@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registrasion Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- 
+  TUGAS 2 MEMBUAT FORM PENDAFTARAN
+  SERLY OKTAVIANI (0110219126) TI04
+   -->
+
+  <form>
+    <h1 >Student Registrasion Form</h1>
+    <table>
+      <tr>
+        <td colspan="3"></td>
+        <td class="label">Date</td>
+        <td class="input"><input type="date" name="date"></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="judul">PERSONAL INFORMATION</td>
+      </tr>
+      <tr style="height:28px">
+        <td width=28%>Name</td>
+        <td colspan="4" bgcolor="#DCDCDC">    
+                <input type="text" id="fnama" name="fname" size="50">
+        </td>
+      </tr>
+      <tr style="height:18px">
+          <td>Date of Birth</td>
+          <td colspan="4" bgcolor="#DCDCDC">
+           <input type="date" id="fdob" name="fdob" size="50">   
+          </td>
+      </tr>
+      <tr>
+        <td colspan="4" class="judul">CONTACT INFORMATION</td>
+      </tr>
+      <tr style="height:28px">
+        <td>Address</td>
+        <td colspan="4" bgcolor="#DCDCDC">
+                <input type="text" id="faddress" name="faddress" size="50">
+        </td>
+    </tr>
+      <tr>
+        <td class="label">City</td>
+        <td class="input">
+          <select bgcolor="#DCDCDC" name="city">
+            <option>--Choose--</option> 
+            <option>DKI Jakarta</option>
+            <option>Jawa Barat</option>
+            <option>Jawa Timur</option>
+            <option>Jawa Tengah</option>
+          </select>
+        </td>
+        <td>Province/State</td>
+            <td bgcolor="#DCDCDC">
+              <select name="province/state">
+                <option>--Choose--</option> 
+                <option>DKI Jakarta</option>
+                <option>Jawa Barat</option>
+                <option>Jawa Tengah</option>
+                <option>Jawa Timur</option>
+              </select>
+                <tr>
+                  <td>ZIP Code</td>
+                  <td bgcolor="#DCDCDC">
+                  <input type="number" id="fzip" name="fzip">   
+                  </td>
+                  <td>Country</td>
+                  <td bgcolor="#DCDCDC">
+                    <select name="country">
+                      <option>--Choose--</option> 
+                      <option>Indonesia</option>
+                      <option>Malaysia</option>
+                      <option>Singapura</option>
+                      <option>Thailand</option>
+                    </select>
+                  </input>
+                  </td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td bgcolor="#DCDCDC">
+                <input type="number" id="fphone" name="fphone">
+                </td>
+                <td>Email</td>
+                <td bgcolor="#DCDCDC">
+                        <input type="email" id="femail" name="femail">
+                </td>
+            </tr>
+            <tr>
+                <td>Membership Type</td>
+                <td bgcolor="#DCDCDC">  
+                        <input type="radio" value="R" name="mt"> Reguler
+                </td>
+                <td bgcolor="#DCDCDC">
+                        <input type="radio" value="P" name="mt"> Premium   
+                </td>
+                <td bgcolor="#DCDCDC">
+                        <input type="radio" value="VIP" name="mt"> VIP  
+                </td>
+            </tr>
+      <tr>
+        <td colspan="4" class="judul">COURSE INFORMATION</td>
+      </tr>
+      <tr>
+        <td  class="label">Course Name</td>
+        <td bgcolor="#DCDCDC" class="input" colspan="4"><input type="text" name="course"></td>
+      </tr>
+      <tr>
+        <td>Payment Details</td>
+        <td bgcolor="#DCDCDC">
+                <input type="radio" value="cash" name="pd"> Cash
+        </td>
+        <td bgcolor="#DCDCDC">
+                <input type="radio" value="cheque" name="pd"> Cheque
+        </td>
+        <td bgcolor="#DCDCDC">
+                <input type="radio" value="creditcard" name="pd"> Credit Card  
+        </td>
+</tr>
+<tr>
+    <td>Comments</td>
+    <td colspan=4 bgcolor="#DCDCDC">
+            <textarea id="comments" name="comments" rows=1 cols=50></textarea>
+    </td>
+</tr>
+      <tr>
+        <td colspan="4">
+          <button type="submit">Submit</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
